@@ -1,1 +1,15 @@
-<p>product-details works!</p>
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+    <h3>{{ product.name }}</h3>
+    <h4>{{ product.price | currency }}</h4>
+    <p>{{ product.description }}</p>
+</div>
+
+<!-- The line, <h4>{{ product.price | currency }}</h4>, uses the currency pipe to
+transform product.price from a number to a currency string. A pipe is a way you can
+transform data in your HTML template.
+
+When users click on a name in the product list, the router navigates them to the distinct
+URL for the product, shows the ProductDetailsComponent, and displays the product details.
+-->
