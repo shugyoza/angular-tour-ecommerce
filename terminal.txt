@@ -1,0 +1,432 @@
+May 22, 2022
+
+Han-MBPro-10% git clone https://github.com/shugyoza/angular-tour-ecommerce.git
+Cloning into 'angular-tour-ecommerce'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Han-MBPro-10% ls
+...
+Han-MBPro-10% pwd
+/Users/stephenhanjaya/Documents/myProject
+Han-MBPro-10% cd angular-tour-ecommerce
+Han-MBPro-10% ls
+README.md
+Han-MBPro-10% pwd
+/Users/stephenhanjaya/Documents/myProject/angular-tour-ecommerce
+Han-MBPro-10% ls
+README.md
+Han-MBPro-10% ng new
+? What name would you like to use for the new workspace and initial project?
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? Sass   [ https://sass-lang.com/
+documentation/syntax#the-indented-syntax ]
+Schematic input does not validate against the Schema: {"projectRoot":"","name":"","prefix":"app","routing":true,"style":"sass","skipTests":false,"skipPackageJson":false,"skipInstall":true,"strict":true,"minimal":false}
+Errors:
+
+  Data path "/name" must match pattern "^(?:@[a-zA-Z0-9-*~][a-zA-Z0-9-*._~]*/)?[a-zA-Z0-9-~][a-zA-Z0-9-._~]*$".
+Han-MBPro-10%
+Han-MBPro-10% ls
+README.md
+Han-MBPro-10% ng new client
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? Sass   [ https://sass-lang.com/
+documentation/syntax#the-indented-syntax ]
+CREATE client/README.md (1060 bytes)
+CREATE client/.editorconfig (274 bytes)
+CREATE client/.gitignore (548 bytes)
+CREATE client/angular.json (3207 bytes)
+CREATE client/package.json (1069 bytes)
+CREATE client/tsconfig.json (863 bytes)
+CREATE client/.browserslistrc (600 bytes)
+CREATE client/karma.conf.js (1423 bytes)
+CREATE client/tsconfig.app.json (287 bytes)
+CREATE client/tsconfig.spec.json (333 bytes)
+CREATE client/.vscode/extensions.json (130 bytes)
+CREATE client/.vscode/launch.json (474 bytes)
+CREATE client/.vscode/tasks.json (938 bytes)
+CREATE client/src/favicon.ico (948 bytes)
+CREATE client/src/index.html (292 bytes)
+CREATE client/src/main.ts (372 bytes)
+CREATE client/src/polyfills.ts (2338 bytes)
+CREATE client/src/styles.sass (80 bytes)
+CREATE client/src/test.ts (745 bytes)
+CREATE client/src/assets/.gitkeep (0 bytes)
+CREATE client/src/environments/environment.prod.ts (51 bytes)
+CREATE client/src/environments/environment.ts (658 bytes)
+CREATE client/src/app/app-routing.module.ts (245 bytes)
+CREATE client/src/app/app.module.ts (393 bytes)
+CREATE client/src/app/app.component.sass (0 bytes)
+CREATE client/src/app/app.component.html (23364 bytes)
+CREATE client/src/app/app.component.spec.ts (1073 bytes)
+CREATE client/src/app/app.component.ts (211 bytes)
+✔ Packages installed successfully.
+    Directory is already under version control. Skipping initialization of git.
+Han-MBPro-10% ls
+README.md	client
+Han-MBPro-10% git remote show origin
+* remote origin
+  Fetch URL: https://github.com/shugyoza/angular-tour-ecommerce.git
+  Push  URL: https://github.com/shugyoza/angular-tour-ecommerce.git
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+Han-MBPro-10% git add .
+Han-MBPro-10% touch .gitignore
+Han-MBPro-10% ls
+README.md	client
+Han-MBPro-10% code .
+Han-MBPro-10% git add .
+Han-MBPro-10% git commit -m "adding .gitignore."
+[main b14795b] adding .gitignore.
+ 30 files changed, 21327 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 client/.browserslistrc
+ create mode 100644 client/.editorconfig
+ create mode 100644 client/.gitignore
+ create mode 100644 client/.vscode/extensions.json
+ create mode 100644 client/.vscode/launch.json
+ create mode 100644 client/.vscode/tasks.json
+ create mode 100644 client/README.md
+ create mode 100644 client/angular.json
+ create mode 100644 client/karma.conf.js
+ create mode 100644 client/package-lock.json
+ create mode 100644 client/package.json
+ create mode 100644 client/src/app/app-routing.module.ts
+ create mode 100644 client/src/app/app.component.html
+ create mode 100644 client/src/app/app.component.sass
+ create mode 100644 client/src/app/app.component.spec.ts
+ create mode 100644 client/src/app/app.component.ts
+ create mode 100644 client/src/app/app.module.ts
+ create mode 100644 client/src/assets/.gitkeep
+ create mode 100644 client/src/environments/environment.prod.ts
+ create mode 100644 client/src/environments/environment.ts
+ create mode 100644 client/src/favicon.ico
+ create mode 100644 client/src/index.html
+ create mode 100644 client/src/main.ts
+ create mode 100644 client/src/polyfills.ts
+ create mode 100644 client/src/styles.sass
+ create mode 100644 client/src/test.ts
+ create mode 100644 client/tsconfig.app.json
+ create mode 100644 client/tsconfig.json
+ create mode 100644 client/tsconfig.spec.json
+Han-MBPro-10% git push
+Enumerating objects: 38, done.
+Counting objects: 100% (38/38), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (34/34), done.
+Writing objects: 100% (37/37), 206.07 KiB | 2.71 MiB/s, done.
+Total 37 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/shugyoza/angular-tour-ecommerce.git
+   5a0faac..b14795b  main -> main
+Han-MBPro-10% ls
+README.md	client
+Han-MBPro-10% cd client
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% code .
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% touch products.ts
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.app.json
+angular.json		package.json		tsconfig.json
+karma.conf.js		products.ts		tsconfig.spec.json
+node_modules		src
+Han-MBPro-10% rm products.ts
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% cd src
+Han-MBPro-10% ls
+app		environments	index.html	polyfills.ts	test.ts
+assets		favicon.ico	main.ts		styles.sass
+Han-MBPro-10% touch products.ts
+Han-MBPro-10% ls
+app		environments	index.html	polyfills.ts	styles.sass
+assets		favicon.ico	main.ts		products.ts	test.ts
+Han-MBPro-10% pwd
+/Users/stephenhanjaya/Documents/myProject/angular-tour-ecommerce/client/src
+Han-MBPro-10% ls
+app		environments	index.html	polyfills.ts	styles.sass
+assets		favicon.ico	main.ts		products.ts	test.ts
+Han-MBPro-10% rm products.ts
+Han-MBPro-10% ls
+app		environments	index.html	polyfills.ts	test.ts
+assets		favicon.ico	main.ts		styles.sass
+Han-MBPro-10% cd app
+Han-MBPro-10% ls
+app-routing.module.ts	app.component.sass	app.component.ts
+app.component.html	app.component.spec.ts	app.module.ts
+Han-MBPro-10% touch products.ts
+Han-MBPro-10% ls
+app-routing.module.ts	app.component.spec.ts	products.ts
+app.component.html	app.component.ts
+app.component.sass	app.module.ts
+Han-MBPro-10% pwd
+/Users/stephenhanjaya/Documents/myProject/angular-tour-ecommerce/client/src/app
+Han-MBPro-10% git add .
+Han-MBPro-10% ls
+app-routing.module.ts	app.component.spec.ts	products.ts
+app.component.html	app.component.ts
+app.component.sass	app.module.ts
+Han-MBPro-10% pwd
+/Users/stephenhanjaya/Documents/myProject/angular-tour-ecommerce/client/src/app
+Han-MBPro-10% cd ..
+Han-MBPro-10% ls
+app		environments	index.html	polyfills.ts	test.ts
+assets		favicon.ico	main.ts		styles.sass
+Han-MBPro-10% cd ..
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% pwd
+/Users/stephenhanjaya/Documents/myProject/angular-tour-ecommerce/client
+Han-MBPro-10% cd ..
+Han-MBPro-10% ls
+README.md	client
+Han-MBPro-10% git add .
+Han-MBPro-10% git commit -m "adding products.ts."
+[main d954ab6] adding products.ts.
+ 1 file changed, 27 insertions(+)
+ create mode 100644 client/src/app/products.ts
+Han-MBPro-10% git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 679 bytes | 679.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/shugyoza/angular-tour-ecommerce.git
+   b14795b..d954ab6  main -> main
+Han-MBPro-10% ls
+README.md	client
+Han-MBPro-10% cd client
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% cd src
+Han-MBPro-10% ls
+app		environments	index.html	polyfills.ts	test.ts
+assets		favicon.ico	main.ts		styles.sass
+Han-MBPro-10% cd app
+Han-MBPro-10% ls
+app-routing.module.ts	app.component.spec.ts	products.ts
+app.component.html	app.component.ts
+app.component.sass	app.module.ts
+Han-MBPro-10% ng new component top-bar
+The new command requires to be run outside of a project, but a project definition was found at "/Users/stephenhanjaya/Documents/myProject/angular-tour-ecommerce/client/angular.json".
+Han-MBPro-10% cd ..
+Han-MBPro-10% ls
+app		environments	index.html	polyfills.ts	test.ts
+assets		favicon.ico	main.ts		styles.sass
+Han-MBPro-10% cd ..
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% cd ..
+Han-MBPro-10% ls
+README.md	client
+Han-MBPro-10% cd client
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% ng new component top-bar
+The new command requires to be run outside of a project, but a project definition was found at "/Users/stephenhanjaya/Documents/myProject/angular-tour-ecommerce/client/angular.json".
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% cd src
+Han-MBPro-10% ls
+app		environments	index.html	polyfills.ts	test.ts
+assets		favicon.ico	main.ts		styles.sass
+Han-MBPro-10% cd app
+Han-MBPro-10% ls
+app-routing.module.ts	app.component.spec.ts	products.ts
+app.component.html	app.component.ts
+app.component.sass	app.module.ts
+Han-MBPro-10% ls
+app-routing.module.ts	app.component.spec.ts	products.ts
+app.component.html	app.component.ts
+app.component.sass	app.module.ts
+Han-MBPro-10% cd ..
+Han-MBPro-10% ls
+app		environments	index.html	polyfills.ts	test.ts
+assets		favicon.ico	main.ts		styles.sass
+Han-MBPro-10% cd ..
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% pwd
+/Users/stephenhanjaya/Documents/myProject/angular-tour-ecommerce/client
+Han-MBPro-10% ng generate component top-bar
+CREATE src/app/top-bar/top-bar.component.sass (0 bytes)
+CREATE src/app/top-bar/top-bar.component.html (22 bytes)
+CREATE src/app/top-bar/top-bar.component.spec.ts (627 bytes)
+CREATE src/app/top-bar/top-bar.component.ts (279 bytes)
+UPDATE src/app/app.module.ts (477 bytes)
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% cd ..
+Han-MBPro-10% ls
+README.md	client
+Han-MBPro-10% ng generate component product-list
+The generate command requires to be run in an Angular project, but a project definition could not be found.
+Han-MBPro-10% ls
+README.md	client
+Han-MBPro-10% cd client
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% ng generate component product-list
+CREATE src/app/product-list/product-list.component.sass (0 bytes)
+CREATE src/app/product-list/product-list.component.html (27 bytes)
+CREATE src/app/product-list/product-list.component.spec.ts (662 bytes)
+CREATE src/app/product-list/product-list.component.ts (299 bytes)
+UPDATE src/app/app.module.ts (581 bytes)
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% ng generate component product-alerts
+CREATE src/app/product-alerts/product-alerts.component.sass (0 bytes)
+CREATE src/app/product-alerts/product-alerts.component.html (29 bytes)
+CREATE src/app/product-alerts/product-alerts.component.spec.ts (676 bytes)
+CREATE src/app/product-alerts/product-alerts.component.ts (307 bytes)
+UPDATE src/app/app.module.ts (693 bytes)
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% cd ..
+Han-MBPro-10% ls
+README.md	client
+Han-MBPro-10% git add .
+Han-MBPro-10% git commit -m "added functional Notify Me button for item costs more than a certain amount, also share buttons for each item."
+[main 765c9af] added functional Notify Me button for item costs more than a certain amount, also share buttons for each item.
+ 17 files changed, 173 insertions(+), 489 deletions(-)
+ rewrite client/src/app/app.component.html (99%)
+ create mode 100644 client/src/app/product-alerts/product-alerts.component.html
+ create mode 100644 client/src/app/product-alerts/product-alerts.component.sass
+ create mode 100644 client/src/app/product-alerts/product-alerts.component.spec.ts
+ create mode 100644 client/src/app/product-alerts/product-alerts.component.ts
+ create mode 100644 client/src/app/product-list/product-list.component.html
+ create mode 100644 client/src/app/product-list/product-list.component.sass
+ create mode 100644 client/src/app/product-list/product-list.component.spec.ts
+ create mode 100644 client/src/app/product-list/product-list.component.ts
+ create mode 100644 client/src/app/top-bar/top-bar.component.html
+ create mode 100644 client/src/app/top-bar/top-bar.component.sass
+ create mode 100644 client/src/app/top-bar/top-bar.component.spec.ts
+ create mode 100644 client/src/app/top-bar/top-bar.component.ts
+Han-MBPro-10% git push
+Enumerating objects: 29, done.
+Counting objects: 100% (29/29), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (21/21), 3.37 KiB | 861.00 KiB/s, done.
+Total 21 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 5 local objects.
+To https://github.com/shugyoza/angular-tour-ecommerce.git
+   d954ab6..765c9af  main -> main
+Han-MBPro-10% ls
+README.md	client
+Han-MBPro-10% cd client
+Han-MBPro-10% ng generate component product-details
+CREATE src/app/product-details/product-details.component.sass (0 bytes)
+CREATE src/app/product-details/product-details.component.html (30 bytes)
+CREATE src/app/product-details/product-details.component.spec.ts (683 bytes)
+CREATE src/app/product-details/product-details.component.ts (311 bytes)
+UPDATE src/app/app.module.ts (1111 bytes)
+Han-MBPro-10% pwd
+/Users/stephenhanjaya/Documents/myProject/angular-tour-ecommerce/client
+Han-MBPro-10% git add .
+Han-MBPro-10% git commit -m "added product-details component."
+[main 06a39de] added product-details component.
+ 5 files changed, 44 insertions(+), 1 deletion(-)
+ create mode 100644 client/src/app/product-details/product-details.component.html
+ create mode 100644 client/src/app/product-details/product-details.component.sass
+ create mode 100644 client/src/app/product-details/product-details.component.spec.ts
+ create mode 100644 client/src/app/product-details/product-details.component.ts
+Han-MBPro-10% git push
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 1.25 KiB | 641.00 KiB/s, done.
+Total 10 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/shugyoza/angular-tour-ecommerce.git
+   765c9af..06a39de  main -> main
+Han-MBPro-10% ls
+README.md		package-lock.json	tsconfig.json
+angular.json		package.json		tsconfig.spec.json
+karma.conf.js		src
+node_modules		tsconfig.app.json
+Han-MBPro-10% pwd
+/Users/stephenhanjaya/Documents/myProject/angular-tour-ecommerce/client
+Han-MBPro-10% git add .
+Han-MBPro-10% git commit -m "added product-details component."
+[main 8ee3f21] added product-details component.
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+Han-MBPro-10% git push
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 739 bytes | 739.00 KiB/s, done.
+Total 8 (delta 7), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
+To https://github.com/shugyoza/angular-tour-ecommerce.git
+   06a39de..8ee3f21  main -> main
+Han-MBPro-10% git add .
+Han-MBPro-10% git commit -m "added product-details component, now whenever users clicked on an item's title, will redirect to /products/:id for the detail page."
+[main a75e78b] added product-details component, now whenever users clicked on an item's title, will redirect to /products/:id for the detail page.
+ 2 files changed, 35 insertions(+), 2 deletions(-)
+ rewrite client/src/app/product-details/product-details.component.html (100%)
+Han-MBPro-10% git push
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.45 KiB | 1.45 MiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/shugyoza/angular-tour-ecommerce.git
+   8ee3f21..a75e78b  main -> main
+Han-MBPro-10% pwd
+/Users/stephenhanjaya/Documents/myProject/angular-tour-ecommerce/client
+Han-MBPro-10%
