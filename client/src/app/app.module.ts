@@ -25,6 +25,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     // this one being passed to <router-outlet></router-outlet> in app.component.html
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      // add route for product details
+      { path: 'products/:productId', component: ProductDetailsComponent},
     ]),
   ],
   providers: [],
